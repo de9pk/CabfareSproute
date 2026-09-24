@@ -1,4 +1,4 @@
-# 🚖 Cab Fare Comparator — Uber vs Ola vs Rapido
+# Cab Fare Comparator — Uber vs Ola vs Rapido
 
 > Automated fare comparison for Jaipur routes. Selenium scrapes Uber, Ola, and Rapido; Streamlit shows live comparison and trends. History lives in SQLite (CSV export kept as a backup).
 
