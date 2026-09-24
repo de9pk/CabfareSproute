@@ -1,25 +1,43 @@
-# Credentials — NEVER commit these
+# ─── Secrets / Credentials ────────────────────────────────
 .env
+.env.*
+!.env.example
 
-# Browser cookies (contain session tokens)
-cookies/
+# ─── Browser session data ──────────────────────────────────
+cookies/*.pkl
+cookies/*.json
 
-# Python
+# ─── Python ───────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.pyo
+*.pyd
 venv/
 .venv/
 env/
+*.egg-info/
+dist/
+.dist/
 
-# Data files
+# ─── Runtime / generated data ─────────────────────────────
 data/fare_history.csv
+data/fares.db
+data/*.db-journal
 
-# OS
+# ─── Logs and debug artefacts ─────────────────────────────
+logs/*.log
+logs/*.png
+logs/*.log.*
+# Scraped HTML debug dumps
+backend/*.html
+
+# ─── Frontend build output ────────────────────────────────
+frontend/dist/
+frontend/node_modules/
+
+# ─── OS / IDE ─────────────────────────────────────────────
 .DS_Store
 Thumbs.db
-
-# IDE
 .vscode/
 .idea/
 *.swp
